@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style> 
+    .sol {
+        margin-left: 15%;
+        width: 30%;
+        float: left;
+        /* background-color: yellow; */
+    }
+    .sol input {
+        float: right;
+    }
+    .sag{
+        float: right;
+        width: 45%;
+        /* background-color: red; */
+        margin-right: 10%;
+    }
+    .saglabelsol {
+        margin-left: 50px;
+    }
+    
+</style>
+  <body>
+    <form action="result.html">
+        <div class="sol">
+      <label for="ad">Adi</label>
+      <input style="margin-left: 10%;" id="ad" type="text" name="adi" /> 
+      <br />
+      <br />
+      
+      <label for="soyad">Soyadi</label>
+      <input id="soyad" type="text" name="soyadi" /> 
+      <br />
+      <br />
+
+      <label for="" style="margin-right: 20%;" >Cinsiyet</label>
+      <input style="float: none;" id="man" type="radio" name="cinsiyet" value="Bay" />
+      <label for="man">Bay</label>
+      <input style="float: none;margin-left: 3%;" id="woman" type="radio" name="cinsiyet" value="Bayan" />
+      <label for="woman">Bayan</label>
+      <br>
+      <br>
+
+      <label for="ilce">Ilce</label>
+      <input id="ilce" list="ilceler" />
+      <datalist id="ilceler">
+        <option value="ehrenfeld">ehrenfeld</option>
+        <option value="sulz">sulz</option>
+        <option value="kalk">kalk</option>
+        <option value="mulheim">mulheim</option>
+      </datalist>
+      <br>
+      <br>
+
+      <label for="eposta">Eposta</label>
+      <input type="email" name="email" id="eposta" />
+      <br>
+      <br>
+
+      <label for="kisiselsite">Kisisel Site</label>
+      <input id="kisiselsite" type="text" />
+      <br>
+      <br>
+
+      <label for="telefon">Telefon</label>
+      <input
+        type="tel"
+        name="tel"
+        id="telefon"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+      />
+      <br>
+      <br>
+    
+    </div>
+      <div class="sag">
+      
+      <label class="saglabelsol" for="">Hobiler</label>
+      <input style="margin-left: 70px;" type="checkbox" name="hobi1" id="futbol" value="Futbol" />
+      <label for="futbol">Futbol</label> <br> 
+      <input style="margin-left: 173px;" type="checkbox" name="hobi2" id="voleybol" value="Voleybol" />
+      <label for="voleybol">Voleybol</label> <br>
+      <input style="margin-left: 173px;" type="checkbox" name="hobi3" id="basketbol" value="Basketbol" />
+      <label for="basketbol">Basketbol</label>
+      <br>
+      <br>
+
+      <label class="saglabelsol" for="profil">Profil fotografi</label> 
+        <input style="margin-left: 20px;" type="file" name="profilfoto" id="profil" >      
+        <br>
+        <br>
+
+      <label class="saglabelsol" for="dogum">Dogum tarihi</label>
+      <input style="margin-left: 30px;" type="text" name="dogumtarihi" id="dogum"/>
+      <br>
+      <br>
+
+     
+
+
+      <label class="saglabelsol" style="margin-top: 100px;vertical-align: top;" for="adres">Adres</label>
+      <textarea
+        style="margin-left: 77px; resize: none;"
+        name="Adres"
+        id="adres"
+        cols="30"
+        rows="4"
+        style="resize: none"
+      ></textarea>
+    
+      <br>
+      <input style="margin-left: 170px;" class="saglabelsol" type="submit" value="Kayit ol" />
+    
+    </div>
+    </form>
+  </body>
+</html>

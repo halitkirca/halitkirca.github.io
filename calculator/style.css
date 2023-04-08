@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: rgb(21, 21, 21);
+    margin: 1rem auto;
+    width: 350px;
+    height: 600px;
+    padding: 190px 1rem 1rem;
+    border-radius: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    gap: 0.5rem;
+}
+
+button {
+    border-radius: 50px;
+    background-color: rgb(87, 87, 87);
+    border: none;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large
+}
+
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3) {
+    background-color: rgb(177, 176, 176);
+    color: black;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+    background-color: rgb(206, 151, 11);
+}
+
+button:nth-child(17) {
+    grid-area: 5/1/span 1/span 2;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+button:active {
+    opacity: 0.5;
+}

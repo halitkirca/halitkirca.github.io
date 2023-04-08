@@ -1,0 +1,69 @@
+
+
+.bannerdiv  {
+    background-image: url("./img/header-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+.bannerdiv div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+div input {
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    outline: none;
+    
+}
+
+i {
+    color: purple;
+    font-size: xx-large;
+}
+
+.purplebuttons:hover {
+    background-color: purple;
+    color: white;
+}
+.purplebuttons:hover i {
+    color: white;
+}
+.underlines {
+    margin:0 auto 1rem;
+    width: 3rem;
+    height: 3px;
+    background-color: purple;
+}
+.card {
+    position: relative;
+}
+
+.project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card:hover .project {
+    background-color: rgba(0, 0, 0, 0.674);
+    color: white;
+    transition: 0.2s ease-in-out;
+}

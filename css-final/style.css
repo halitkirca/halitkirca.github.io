@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    width: 500px;
+    height: 620px;
+    margin: 1rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > div {
+    width: 95%;
+}
+
+.header {
+    margin-top: 15px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+.header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+.header div:first-child {
+    height: 90%;
+    width: 35%;
+    background-color: rgb(28, 226, 28);
+}
+.header div:last-child {
+    height: 90%;
+    width: 63%;
+    background-color: rgb(10, 186, 245);
+}
+
+.banner {
+    margin-top: 20px;
+    height: 150px;
+    background-color: rgb(222, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-below {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.banner-below div {
+    width: 33%;
+    background-color: rgb(83, 234, 83);
+}
+
+.orange-boxes {
+    margin-top: 70px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.orange-boxes div:first-child, .orange-boxes div:last-child {
+    background-color: rgb(223, 153, 24);
+    width: 15%;
+    border: 2px solid black;
+}
+.orange-boxes div:nth-child(2){
+    background-color: rgb(223, 153, 24);
+    width: 45%;
+    border: 2px solid black;
+}
+
+.footer-boxes {
+    width: 90%;
+    margin-top: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-boxes div:first-child, .footer-boxes div:last-child {
+    width: 27%;
+    background-color: rgb(25, 166, 25);
+    border: 2px solid black;
+}
+
+.footer-boxes div:nth-child(2),
+.footer-boxes div:nth-child(3) {
+    width: 18%;
+    background-color: rgb(25, 166, 25);
+    border: 2px solid black;
+}
+
+.footer-boxes div:nth-child(2) {
+    margin-left: 5px;
+}
+.footer-boxes div:nth-child(3) {
+    margin-right: 5px;
+}

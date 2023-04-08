@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+}
+.overall {
+    margin: 50px;
+    width: 500px;
+    height: 480px;
+    position: relative;
+}
+
+img {
+    width: 100px; 
+    border: 2px solid black;
+    border-radius: 50px;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+}
+
+main {
+    background-color: rgb(216, 89, 93);
+    position: absolute;
+    top: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 400px;
+    box-shadow: 2px 2px 5px gray;
+
+}
+h3 {
+    font-size: 17px;
+    margin-top: 70px ;
+    text-align: center;
+}
+span {
+    color: yellow;
+}
+
+p {
+    color: rgb(46, 46, 46);
+    margin:25px 40px 0px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.download {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    right: 50px;
+    font-size: 15px;
+    color: rgb(171, 30, 106);
+}
+
+
+
+

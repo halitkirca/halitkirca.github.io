@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border {
+    margin: 50px;
+    border: 3px solid cornflowerblue;
+    position: relative;
+    width: 700px;
+    height: 250px;
+}
+
+.redimage {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    left: 40px;
+    top: 70px;
+}
+
+h2 {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 200px;
+    top: 75px;
+}
+
+p {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 205px;
+    top: 110px;
+    right: 10px;
+}

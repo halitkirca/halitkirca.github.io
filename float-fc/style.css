@@ -1,0 +1,79 @@
+body {
+    background-color: antiquewhite;
+}
+.divclass {
+    margin: auto;
+    background-color: pink;
+    width: 50%;
+    height: 40vw;
+}
+.divclass div {
+    margin:2%;
+    width: 5vw;
+    height: 5vw;
+    background-color: black;
+}
+
+.divclass div:first-child,
+.divclass div:nth-child(2),
+.divclass :nth-child(3),
+.divclass :nth-child(10)
+{
+    float: left;
+}
+
+.divclass div:nth-child(4),
+.divclass div:nth-child(5),
+.divclass div:nth-child(6),
+.divclass div:nth-child(8),
+.divclass div:nth-child(11),
+.divclass div:nth-child(13),
+.divclass div:nth-child(15),
+.divclass div:nth-child(16),
+.divclass div:nth-child(17)
+{
+    float: right;
+}
+
+.divclass div:nth-child(7),
+.divclass div:nth-child(9),
+.divclass div:nth-child(12),
+.divclass div:nth-child(14)
+{
+    clear: both;
+    float: left;
+}
+/* .divclass div:nth-child(8) {
+    float: right;
+} */
+/* .divclass div:nth-child(9) {
+    clear: both;
+    float: left;
+} */
+/* .divclass div:nth-child(10) {
+    float: left;
+} */
+/* .divclass div:nth-child(11) {
+    float: right;
+} */
+/* .divclass div:nth-child(12) {
+    clear: both;
+    float: left;
+} */
+
+/* .divclass div:nth-child(13) {
+    float: right;
+} */
+/* .divclass div:nth-child(14) {
+    clear: both;
+    float: left;
+} */
+/* .divclass div:nth-child(15),
+.divclass div:nth-child(16),
+.divclass div:nth-child(17) {
+    float: right;
+} */
+
+
+
+

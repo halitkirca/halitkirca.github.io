@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+header p {
+    display: inline-block;  
+    margin-top: 4vh;
+}
+nav {
+    height: 4vh;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+nav p {
+    display: inline-block;
+    margin-top: 1vh;
+}
+
+aside {
+    width: 20%;
+    height: 76vh;
+    padding: 1rem;
+    background-color: yellow;
+    border: 5px solid red;
+    border-radius: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+main {
+    color: white;
+    padding: 3rem;
+    text-align: center;
+
+    background-image: url("monalisa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top center;
+
+    float: right;
+    width: 80%;
+    height: 76vh;
+}
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    clear: both;
+}
+footer p {
+    display: inline-block;
+    margin-top: 4vh;
+}

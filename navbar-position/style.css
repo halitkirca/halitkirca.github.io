@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+}/*
+ table {
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-collapse: collapse; } */
+
+/*
+tr:first-child {
+    background-color: rgb(71, 65, 65);
+    color: white;
+    position: sticky;
+    top: 0px;
+} */
+/* th{
+    position: sticky;
+    top: 0px;
+} */
+/*
+th:first-child {
+    width: 50%;
+    text-align: left;
+}
+th:last-child {
+    text-align: right;
+}
+th:last-child a{
+    text-decoration: none;
+    color: white;
+}
+
+tr:last-child{
+    background-color: rgb(212, 212, 212);
+}
+td:first-child {
+    padding: 10px 0;
+    font-family: cursive;
+    font-size: xx-large;
+}
+td:last-child {
+    text-align: right;
+}
+td a {
+    color: black;
+    text-decoration: none;
+} */
+
+.whatsapp {
+    position: fixed;
+    font-size: 40px;
+    right: 20px;
+    bottom: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav div, div div {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+}
+.row1 {
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.row2 {
+    background-color: rgb(183, 181, 185);
+    display: flex;
+    justify-content: space-between;
+}
+.practise {
+    font-family: cursive;
+    width: 50%;
+    padding: 10px 0px;
+    font-size: xx-large;
+    box-sizing: border-box;
+}
+.row2 a{
+    display: inline-block;
+}
+.links {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+nav div {    
+    width: 50%;
+    color: white;
+}
+nav div a{
+    color: white;
+    text-decoration: none;
+}
+nav div:first-child, div div:first-child {
+    padding-left: 5px;
+}
+
+nav div:last-child {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.empty {
+    width: 50px;
+    height: 110vh;
+}
