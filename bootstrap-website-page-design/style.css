@@ -1,0 +1,27 @@
+
+
+nav {
+    background-color: rgb(27, 90, 135);
+}
+nav a{
+    color: white;
+}
+
+figure {
+    background-image: url(./img/showcase.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#subscribe {
+    background-color: rgb(27, 90, 135);
+}
+footer {
+    background-color: rgb(27, 90, 135);
+}
+
+.bluebox {
+    background-color: rgb(27, 90, 135);
+}
