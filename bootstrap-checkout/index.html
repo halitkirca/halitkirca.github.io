@@ -103,7 +103,7 @@
                         </label>
                     </div>
 
-                    <div class="text-center text-md-end mb-4">
+                    <div class="text-center mb-4">
                         <button class="btn btn-warning" type="submit">Continue</button>
                     </div>
 
@@ -119,15 +119,16 @@
                     </div>
                     <div class="col-7">
                         <h5>Vintage Backbag</h5>
-                        <p class="d-inline" style="color: darkorange;"> $54.99</p>
-                        <p class="d-inline text-decoration-line-through"> $94.99</p>
+                        <p class="d-inline" style="color: darkorange;">$<span class="prices">25.99</span> <span class="d-inline text-black text-decoration-line-through">$34.99</span></p>
                         
-                        <div class="border border-1 border-black rounded-3 d-flex justify-content-around align-items-center mt-1" style="width: 120px; height: 40px;">
-                            <button style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-minus"></i></button>
-                            1
-                            <button style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <div class=" border border-1 border-black rounded-3 d-flex justify-content-around align-items-center mt-1" style="width: 120px; height: 40px;">
+                            <button class="minus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                        <span class="amounts">1</span>
 
+                            <button class="plus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="remove mt-2 bg-danger border-0 rounded-1 text-white">remove</button>
+                        
                     </div>
                 </div>
 
@@ -138,27 +139,55 @@
                     <div class="col-7">
                         <h5>Levi Shoes</h5>
                         <div>
-                        <p class="d-inline" style="color: darkorange;"> $74.99</p>
-                        <p class="d-inline text-decoration-line-through"> $124.99</p>
+                        <p class="d-inline" style="color: darkorange;">$<span class="prices">45.99</span> <span class="d-inline text-black text-decoration-line-through">$54.99</span></p>
                         </div>
                         <div class="border border-1 border-black rounded-3 d-flex justify-content-around align-items-center mt-1" style="width: 120px; height: 40px;">
-                            <button style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-minus"></i></button>
-                            1
-                            <button style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-plus"></i></button>
+                            <button class="minus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-minus"></i></button>
+                            <span class="amounts">1</span>
+                            <button class="plus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
+                        <button class="remove mt-2 bg-danger border-0 rounded-1 text-white">remove</button>
+                    </div>
+                </div>
 
+                <div class="row d-flex mb-5">
+                    <div class="col-5">
+                        <img src="./img/photo3.jpg" alt="" style="max-width: 100%; height: auto;" class="rounded-4" aria-colspan="">
+                    </div>
+                    <div class="col-7">
+                        <h5>Levi Shoes</h5>
+                        <div>
+                        <p class="d-inline" style="color: darkorange;">$<span class="prices">74.99</span> <span class="d-inline text-black text-decoration-line-through">$94.99</span></p>
+                        </div>
+                        <div class="border border-1 border-black rounded-3 d-flex justify-content-around align-items-center mt-1" style="width: 120px; height: 40px;">
+                            <button class="minus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                        <span class="amounts">1</span>
+
+                            <button class="plus" style="padding: 0; height: 30px; width: 20px; border: none; border-radius: 5px; background-color: rgb(193, 193, 193);" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="remove mt-2 bg-danger border-0 rounded-1 text-white">remove</button>
                     </div>
                 </div>
 
                 <div class="bg-secondary w-100 mt-1" style="height: 1px;"></div>
                 <div class="d-flex justify-content-between">
+                    <p>Subtotal</p>
+                    <p id="subtotal"></p>
+                </div>
+                <div class="bg-secondary w-100" style="height: 1px;"></div>
+                <div class="d-flex justify-content-between">
+                    <p>Taxes</p>
+                    <p id="taxes"></p>
+                </div>
+                <div class="bg-secondary w-100" style="height: 1px;"></div>
+                <div class="d-flex justify-content-between">
                     <p>Shipping</p>
-                    <p>19$</p>
+                    <p id="shipping"></p>
                 </div>
                 <div class="bg-secondary w-100" style="height: 1px;"></div>
                 <div class="d-flex justify-content-between">
                     <p>Total</p>
-                    <p>148.98$</p>
+                    <p id="total"></p>
                 </div>
                 
             </section>
@@ -166,7 +195,7 @@
     </main>
 
 
-
+    <script src="app.js"></script>
 
 
 
