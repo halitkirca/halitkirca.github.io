@@ -4,6 +4,7 @@ const plusBtn = document.querySelectorAll(".plus");
 const orderAmounts = document.querySelectorAll(".amounts"); 
 const prices = document.querySelectorAll(".prices"); 
 const removeBtn = document.querySelectorAll(".remove");
+const productTotals = document.querySelectorAll(".productTotals");
 
 const subtotal = document.querySelector("#subtotal"); 
 const taxes = document.querySelector("#taxes"); 
@@ -21,6 +22,9 @@ const billing = () => {
     
     orderAmounts.forEach((p,i,array) => {
         subtotalPrice += Number(p.textContent*prices[i].textContent);
+        productTotals[i].textContent = Number(
+          p.textContent * prices[i].textContent
+        ).toFixed(2);
     })
     console.log(subtotalPrice);
 
