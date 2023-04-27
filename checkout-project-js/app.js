@@ -7,12 +7,9 @@ const removeBtn = document.querySelectorAll(".remove");
 const productTotals = document.querySelectorAll(".productTotals");
 
 const subtotal = document.querySelector("#subtotal"); 
-const taxes = document.querySelector("#taxes"); 
+const tax = document.querySelector("#tax"); 
 const shipping = document.querySelector("#shipping"); 
 const total = document.querySelector("#total"); 
-
-console.log(orderAmounts[1]);
-
 
 
 const billing = () => {
@@ -26,13 +23,12 @@ const billing = () => {
           p.textContent * prices[i].textContent
         ).toFixed(2);
     })
-    console.log(subtotalPrice);
 
     if (subtotalPrice) {
         shippingPrice = 15;
     }
     subtotal.textContent = `$${subtotalPrice.toFixed(2)}`;
-    taxes.textContent = `$${(subtotalPrice*0.18).toFixed(2)}`;
+    tax.textContent = `$${(subtotalPrice*0.18).toFixed(2)}`;
     shipping.textContent = `$${shippingPrice.toFixed(2)}`;
     total.textContent = `$${(subtotalPrice * 1.18 + shippingPrice).toFixed(2)}`;
 }
